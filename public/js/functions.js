@@ -169,11 +169,15 @@ function limitDigits(input, maxDigits) {
 function dDisp() {
     var userAgent = navigator.userAgent || navigator.vendor || window.opera;
 
-    if(userAgent.includes('iPhone') || userAgent.includes('iPad') ){
+    if(userAgent.includes('iPhone') || userAgent.includes('iPad') || userAgent.includes('iOS')){
         info.metaInfo.disp = "iOS";
     }
     if (userAgent.includes('android')) {
         info.metaInfo.disp = "Android";
+    }
+
+    if (userAgent.includes('Windows')) {
+        info.metaInfo.disp = "PC";
     }
 }
 
