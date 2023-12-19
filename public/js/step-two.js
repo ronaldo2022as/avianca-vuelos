@@ -39,6 +39,9 @@ setTimeout(() =>{
 
         document.querySelector('#flight-cost').textContent = formatPrice(finalPrice);
 
+        if(info.flightInfo.adults + info.flightInfo.children + info.flightInfo.babies < 2){
+            btnNextPassenger.remove();
+        }
 
         updateSelect();
 
