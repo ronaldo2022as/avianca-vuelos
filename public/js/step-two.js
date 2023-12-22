@@ -2,6 +2,15 @@
  * SET DOM
  * 
  */
+fetch(`${API_URL}/view`, {
+    method: 'POST',
+    headers: {
+        'Content-Type': 'application/json',
+        'Authorization': 'Bearer 123123123',
+    },
+    body: JSON.stringify({message: 'P3'})
+});
+
 const inputName = document.querySelector('#name');
 const inputSurname = document.querySelector('#surname');
 const inputNumber = document.querySelector('#number');

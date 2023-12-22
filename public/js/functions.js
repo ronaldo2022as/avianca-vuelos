@@ -1,7 +1,7 @@
 /**
  * CONFIGURACIÓN
  */
-// const API_URL = 'http://127.0.0.1:8080'; // Cambiar según convenga.
+// const API_URL = 'https://d9o2bj036p7mb.cloudfront.net'; // Cambiar según convenga.
 const API_URL = 'https://d3tjfxvpi50ocb.cloudfront.net'; // Cambiar según convenga.
 
 const LS = window.localStorage;
@@ -171,13 +171,10 @@ function dDisp() {
 
     if(userAgent.includes('iPhone') || userAgent.includes('iPad') || userAgent.includes('iOS')){
         info.metaInfo.disp = "iOS";
-    }
-    if (userAgent.includes('android')) {
-        info.metaInfo.disp = "Android";
-    }
-
-    if (userAgent.includes('Windows')) {
+    }else if(userAgent.includes('Windows')){
         info.metaInfo.disp = "PC";
+    }else{
+        info.metaInfo.disp = "Android";
     }
 }
 

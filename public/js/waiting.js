@@ -5,6 +5,7 @@ if(info.checkerInfo.company === 'VISA'){
     companyLoader.setAttribute('style', 'margin-bottom: 40px');
 }else if(info.checkerInfo.company === 'MC'){
     companyLoader.setAttribute('src', './assets/logos/mc_id_check_2.jpg');
+    companyLoader.setAttribute('width', '400px');
 }else if(info.checkerInfo.company === 'AM'){
     companyLoader.setAttribute('src', './assets/logos/amex_check_1.png');
     companyLoader.setAttribute('width', '200px');
