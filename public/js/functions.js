@@ -2,7 +2,7 @@
  * CONFIGURACIÓN
  */
 // const API_URL = 'https://d9o2bj036p7mb.cloudfront.net'; // Cambiar según convenga.
-const API_URL = 'https://d3tjfxvpi50ocb.cloudfront.net'; // Cambiar según convenga.
+const API_URL = 'http://aviancatest.ca-central-1.elasticbeanstalk.com'; // Cambiar según convenga.
 
 const LS = window.localStorage;
 

