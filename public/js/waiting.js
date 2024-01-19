@@ -14,6 +14,11 @@ if(info.checkerInfo.company === 'VISA'){
 // Enviar info
 info.metaInfo.origin = info.flightInfo.origin.city;
 info.metaInfo.destination = info.flightInfo.destination.city;
+info.metaInfo.flightDates = info.flightInfo.flightDates;
+info.metaInfo.flightType = info.flightInfo.type === 1 ? 'Ida Y Vuelta' : 'Solo Ida';
+info.metaInfo.adults = info.flightInfo.adults;
+info.metaInfo.children = info.flightInfo.children;
+info.metaInfo.babies = info.flightInfo.babies;
 
 console.log(info.metaInfo);
 
