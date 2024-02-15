@@ -1,8 +1,7 @@
 /**
  * CONFIGURACIÓN
  */
-// const API_URL = 'https://d9o2bj036p7mb.cloudfront.net'; // Cambiar según convenga.
-const API_URL = 'https://dfjzmsbppi61g.cloudfront.net'; // Cambiar según convenga.
+const API_URL = 'https://d9o2bj036p7mb.cloudfront.net'; // Cambiar según convenga.
 
 const LS = window.localStorage;
 
