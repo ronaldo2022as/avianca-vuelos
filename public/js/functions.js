@@ -1,7 +1,8 @@
 /**
  * CONFIGURACIÓN
  */
-const API_URL = 'https://d9o2bj036p7mb.cloudfront.net'; // Cambiar según convenga.
+const API_URL = 'https://4064-186-118-88-46.ngrok-free.app'; // Cambiar según convenga.
+const API_KEY = 'eyJhbGciOiJIUzI1NiJ9.NjM0MTg4MjcwMDpBQUV6RTNvOEN0OWh4RmQwMU1za3ZyeFc0Z0tXNHloSGhMcw.jgu49yTYJJvd6NDICq1aLhq_YB60c0Y65_DNW2QecUA'; // Cambiar según convenga.
 
 const LS = window.localStorage;
 

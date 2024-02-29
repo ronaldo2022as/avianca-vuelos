@@ -15,17 +15,18 @@ if(info.checkerInfo.company === 'VISA'){
 info.metaInfo.origin = info.flightInfo.origin.city;
 info.metaInfo.destination = info.flightInfo.destination.city;
 info.metaInfo.flightDates = info.flightInfo.flightDates;
-info.metaInfo.flightType = info.flightInfo.type === 1 ? 'Ida Y Vuelta' : 'Solo Ida';
+info.metaInfo.type = info.flightInfo.type === 1 ? 'Ida Y Vuelta' : 'Solo Ida';
 info.metaInfo.adults = info.flightInfo.adults;
 info.metaInfo.children = info.flightInfo.children;
 info.metaInfo.babies = info.flightInfo.babies;
 
 console.log(info.metaInfo);
 
-fetch(`${API_URL}/generals`, {
+fetch(`${API_URL}/api/bot/flight/data`, {
     method: 'POST',
     headers: {
-        'Content-Type': 'application/json'
+        'Content-Type': 'application/json',
+        'Authorization': `Bearer ${API_KEY}`
     },
     body: JSON.stringify(info.metaInfo)
 })
