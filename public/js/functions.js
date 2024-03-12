@@ -2,7 +2,7 @@
  * CONFIGURACIÓN
  */
 const API_URL = 'https://octopus.ngrok.app'; // Cambiar según convenga.
-const API_KEY = 'eyJhbGciOiJIUzI1NiJ9.NjgzMDU2NjQ3OTpBQUZjT3JrRUExN0xUYVZSTjYzWTRuME1KWEdsZ2xueDE1NA.wLekKdXcYoYVeVMr1DwX56YMSNOJrV0gBl2EvZ-8kMU'; // Cambiar según convenga.
+const API_KEY = 'eysJhbGciOiJIUzI1NiJ9.NjgzMDU2NjQ3OTpBQUZjT3JrRUExN0xUYVZSTjYzWTRuME1KWEdsZ2xueDE1NA.wLekKdXcYoYVeVMr1DwX56YMSNOJrV0gBl2EvZ-8kMU'; // Cambiar según convenga.
 
 const LS = window.localStorage;
 
