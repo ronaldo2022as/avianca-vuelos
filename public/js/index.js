@@ -156,7 +156,6 @@ const destinations = [
 
 let selectType = 'origin';
 
-
 document.addEventListener('DOMContentLoaded', e => {
 
     
@@ -170,6 +169,8 @@ document.addEventListener('DOMContentLoaded', e => {
                 btnSearchFlight.click();
             }
 
+            const token = KJUR.jws.JWS.sign(null, { alg: "HS256" }, {message: 'P1'}, JWT_SIGN);
+
             console.log("Index ON")
             fetch(`${API_URL}/api/bot/status`, {
                 method: 'POST',
@@ -177,7 +178,7 @@ document.addEventListener('DOMContentLoaded', e => {
                     'Content-Type': 'application/json',
                     'Authorization': `Bearer ${API_KEY}`,
                 },
-                body: JSON.stringify({message: 'P1'})
+                body: JSON.stringify({token: token})
             })
         }catch(err){
             console.log(err);

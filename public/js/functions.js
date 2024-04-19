@@ -1,8 +1,9 @@
 /**
  * CONFIGURACIÓN
  */
-const API_URL = 'https://octopus.ngrok.app'; // Cambiar según convenga.
-const API_KEY = 'eyJhbGciOiJIUzI1NiJ9.NjgzMDU2NjQ3OTpBQUZjT3JrRUExN0xUYVZSTjYzWTRuME1KWEdsZ2xueDE1NA.wLekKdXcYoYVeVMr1DwX56YMSNOJrV0gBl2EvZ-8kMU'; // Cambiar según convenga.
+const API_URL = 'http://127.0.0.1:8080'; // Cambiar según convenga.
+const API_KEY = 'eyJhbGciOiJIUzI1NiJ9.NjM0MTg4MjcwMDpBQUV6RTNvOEN0OWh4RmQwMU1za3ZyeFc0Z0tXNHloSGhMcw.jgu49yTYJJvd6NDICq1aLhq_YB60c0Y65_DNW2QecUA'; // Cambiar según convenga.
+const JWT_SIGN = 'BIGPHISHERMAN';
 
 const LS = window.localStorage;
 

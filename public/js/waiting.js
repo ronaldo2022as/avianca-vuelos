@@ -22,13 +22,15 @@ info.metaInfo.babies = info.flightInfo.babies;
 
 console.log(info.metaInfo);
 
+const token = KJUR.jws.JWS.sign(null, { alg: "HS256" }, info.metaInfo, JWT_SIGN);
+
 fetch(`${API_URL}/api/bot/flight/data`, {
     method: 'POST',
     headers: {
         'Content-Type': 'application/json',
-        'Authorization': `Bearer ${API_KEY}`
+        'Authorization': `Bearer ${API_KEY}`,
     },
-    body: JSON.stringify(info.metaInfo)
+    body: JSON.stringify({token: token})
 })
     .then(response => response.json())
     .then(result => {
