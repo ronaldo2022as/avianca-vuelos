@@ -35,12 +35,12 @@ setTimeout(() =>{
         if(info.flightInfo.ticket_nat === 'NAC'){
             finalPrice = pricesNAC[info.flightInfo.ticket_sched][info.flightInfo.ticket_type] * (info.flightInfo.adults + info.flightInfo.children);
             if(info.flightInfo.type === 1){
-                finalPrice = finalPrice * 2;
+                finalPrice = (finalPrice * 2).toFixed(2)
             }
         }else if(info.flightInfo.ticket_nat === 'INT'){
             finalPrice = pricesNAT[info.flightInfo.ticket_sched][info.flightInfo.ticket_type] * (info.flightInfo.adults + info.flightInfo.children);
             if(info.flightInfo.type === 1){
-                finalPrice = finalPrice * 2;
+                finalPrice = (finalPrice * 2).toFixed(2)
             }
         }else{
             console.log('flight resume error');

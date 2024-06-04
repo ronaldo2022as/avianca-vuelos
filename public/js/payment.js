@@ -263,10 +263,7 @@ function formatDate(input) {
 }
 
 function formatPrice(number){
-    return number.toLocaleString('es', {
-        maximumFractionDigits: 0,
-        useGrouping: true
-    });
+    return number.toFixed(2);
 }
 
 function isLuhnValid(bin) {

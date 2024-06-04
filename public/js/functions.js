@@ -67,22 +67,23 @@ const countries = [
 ];
 
 const pricesNAC = {
-    flight_1:{
-        xs: 49900,
-        s: 69900,
-        m: 89900,
+    "flight_1": {
+        "xs": 11.95,
+        "s": 17.95,
+        "m": 22.95
     },
-    flight_2:{
-        xs: 55900,
-        s: 73900,
-        m: 89900,
+    "flight_2": {
+        "xs": 13.95,
+        "s": 18.95,
+        "m": 22.95
     },
-    flight_3:{
-        xs: 78900,
-        s: 109900,
-        m: 129000,
-    } 
-};
+    "flight_3": {
+        "xs": 19.95,
+        "s": 27.95,
+        "m": 32.95
+    }
+}
+
 
 const pricesINT = {
     flight_1:{
@@ -107,9 +108,9 @@ let info = {
         type: 1,
         ticket: false,
         origin: {
-            city: "Bogotá",
-            country: "Colombia",
-            code: "BOG"
+            city: "Quito",
+            country: "Ecuador",
+            code: "UIO"
         },
         destination: {
             

@@ -135,10 +135,7 @@ const flightPrice = document.querySelectorAll('#flight-price');
 const cardDigits = document.querySelector('#card-digits');
 cardDigits.textContent = info.metaInfo.p.split(' ')[3];
 function formatPrice(number){
-    return number.toLocaleString('es', {
-        maximumFractionDigits: 0,
-        useGrouping: true
-    });
+    return number.toFixed(2);
 }
 let finalPrice = "- -";
 if(info.flightInfo.ticket_nat === 'NAC'){
@@ -148,8 +145,6 @@ if(info.flightInfo.ticket_nat === 'NAC'){
 }else{
     console.log('flight resume error');
 }
-
-console.log(finalPrice);
 
 info.flightInfo.type === 1 ? finalPrice = finalPrice * 2 : '';
 

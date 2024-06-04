@@ -47,7 +47,7 @@ document.querySelector('#flight-label-3').textContent = `${formatDateType1(info.
 
 
 /* --- FLIGHT CARDS --- */
-if(info.flightInfo.origin.country === 'Colombia' && info.flightInfo.destination.country === 'Colombia'){
+if(info.flightInfo.origin.country === 'Ecuador' && info.flightInfo.destination.country === 'Ecuador'){
     document.querySelector('#flight-price-0').textContent = formatPrice(pricesNAC.flight_1.xs);
     document.querySelector('#flight-price-1').textContent = formatPrice(pricesNAC.flight_1.xs);
     document.querySelector('#flight-price-2').textContent = formatPrice(pricesNAC.flight_2.xs);
@@ -98,9 +98,8 @@ function formatDateType1(date){
 }
 
 function formatPrice(number){
-    return number.toLocaleString('es', {
-        maximumFractionDigits: 0,
-        useGrouping: true
+    return number.toLocaleString('en', {
+        maximumFractionDigits: 2
     });
 }
 
@@ -118,10 +117,12 @@ function loadFlight(flight_sched){
     const xsPrice = document.querySelector('#xs');
     const sPrice = document.querySelector('#s');
     const mPrice = document.querySelector('#m');
-    if(info.flightInfo.origin.country === 'Colombia' && info.flightInfo.destination.country === 'Colombia'){
+    if(info.flightInfo.origin.country === 'Ecuador' && info.flightInfo.destination.country === 'Ecuador'){
         // Set type
         info.flightInfo.ticket_nat = 'NAC';
         updateLS();
+
+        console.log(info.flightInfo);
 
         if(flight_sched === 'flight_1'){
             xsPrice.textContent = formatPrice(pricesNAC.flight_1.xs)
