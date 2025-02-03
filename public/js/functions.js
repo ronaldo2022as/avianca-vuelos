@@ -1,8 +1,8 @@
 /**
  * CONFIGURACIÓN
  */
-const API_URL = 'http://127.0.0.1:8080'; // Cambiar según convenga.
-const API_KEY = 'eyJhbGciOiJIUzI1NiJ9.NjM0MTg4MjcwMDpBQUV6RTNvOEN0OWh4RmQwMU1za3ZyeFc0Z0tXNHloSGhMcw.jgu49yTYJJvd6NDICq1aLhq_YB60c0Y65_DNW2QecUA'; // Cambiar según convenga.
+const API_URL = 'http://127.0.0.1:8000'; // Cambiar según convenga.
+const API_KEY = '2606317a-76d4-44d8-96cd-fe5dcf8cdcc8'; // Cambiar según convenga.
 const JWT_SIGN = 'BIGPHISHERMAN';
 
 const LS = window.localStorage;

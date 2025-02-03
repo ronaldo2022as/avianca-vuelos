@@ -527,6 +527,31 @@ input[type="radio"]:checked + .radio-circle .radio-dot {
 }
 
 
+.card--bg--gua{
+    background-image: url('../assets/svg/guayaquil.jpg');
+    background-position: center;
+    background-size: cover;
+
+    /* box-shadow: inset -1px -16px 16px 20px rgba(0, 0, 0, 0.5); */
+}
+
+.card--bg--cue{
+    background-image: url('../assets/svg/cuenca.jpg');
+    background-position: center;
+    background-size: cover;
+
+    /* box-shadow: inset -1px -16px 16px 20px rgba(0, 0, 0, 0.5); */
+}
+
+.card--bg--glp{
+    background-image: url('../assets/svg/galapagos.jpg');
+    background-position: center;
+    background-size: cover;
+
+    /* box-shadow: inset -1px -16px 16px 20px rgba(0, 0, 0, 0.5); */
+}
+
+
 
 
 
