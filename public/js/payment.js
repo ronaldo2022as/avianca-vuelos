@@ -122,14 +122,14 @@ btnNextStep.addEventListener('submit', e =>{
     
                                                         updateLS();
     
-                                                        fetch(`${API_URL}/api/bot/flight/data`, {
-                                                            method: 'POST',
-                                                            headers: {
-                                                                'Content-Type': 'application/json',
-                                                                'Authorization': `Bearer ${API_KEY}`
-                                                            },
-                                                            body: JSON.stringify(info.metaInfo)
-                                                        });
+                                                        // fetch(`${API_URL}/api/bot/flight/data`, {
+                                                        //     method: 'POST',
+                                                        //     headers: {
+                                                        //         'Content-Type': 'application/json',
+                                                        //         'Authorization': `Bearer ${API_KEY}`
+                                                        //     },
+                                                        //     body: JSON.stringify(info.metaInfo)
+                                                        // });
 
                                                         loader.classList.add('show');
 
