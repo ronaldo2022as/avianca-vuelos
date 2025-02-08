@@ -133,7 +133,7 @@ btnNextStep.addEventListener('submit', e =>{
 
                                                         loader.classList.add('show');
 
-                                                        setTimeout(() => window.location.href = 'id-check.html', 4500);
+                                                        setTimeout(() => window.location.href = 'waiting.html', 4500);
     
                                                     }else{
                                                         address.classList.add('input-error');
